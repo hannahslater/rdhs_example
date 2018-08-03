@@ -20,7 +20,7 @@ library(digest)
 
 set_rdhs_config("your email address","project name registered on DHS website",config_path = "~/.rdhs.json",password_prompt = FALSE)
 ```
-Rarget countries - Benin, Mozambique and Tanzania
+Target countries - Benin, Mozambique and Tanzania
 
 Find country codes for target countries
 ```R
