@@ -15,7 +15,7 @@ install.packages("digest")
 library(dplyr)
 library(rgdal)
 library(rdhs)
-library(RColorBrewer)+
+library(RColorBrewer)
 library(digest)
 
 set_rdhs_config("your email address","project name registered on DHS website",config_path = "~/.rdhs.json",password_prompt = FALSE)
