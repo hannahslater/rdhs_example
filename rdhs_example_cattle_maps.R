@@ -6,8 +6,8 @@
 # (for a project looking at the impact of targeting cattle or pigs with ivermectin to kill zoophilic 
 # mosquitoes, and reduce malaria transmission)
 
-# devtools::install_github("OJWatson/rdhs")
-# install.packages("digest")
+devtools::install_github("OJWatson/rdhs")
+install.packages("digest")
 
 library(dplyr)
 library(rgdal)
