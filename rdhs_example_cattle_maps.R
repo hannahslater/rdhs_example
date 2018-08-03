@@ -106,6 +106,7 @@ get_shps("https://raw.githubusercontent.com/hannahslater/rdhs_example/master/ben
 get_shps("https://raw.githubusercontent.com/hannahslater/rdhs_example/master/tan_adm2.zip")
 
 list.files(".", pattern = "shp")
+wd = getwd()
 mz2 <- readOGR(dsn=wd, layer="moz_polbnda_adm2_districts_wfp_ine_pop2012_15_ocha")
 ben2 <- readOGR(dsn=wd, layer="ben_admbnda_adm2_1m_salb")
 tz2 <- readOGR(dsn=wd, layer="Districts")
@@ -151,3 +152,6 @@ plot_func(d1_clus[[6]], shp = tz2, nmaps=2, legplace = "bottomleft")
 dev.off()
 
 
+jpeg(paste0(names[5],"_map.jpg"),width=280,height=130,units="mm",res=300)
+plot_func(d1_clus[[5]], shp = tz2, nmaps=3, legplace = "bottomleft")
+dev.off()
