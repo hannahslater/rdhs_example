@@ -99,6 +99,8 @@ get_shps <- function(urlname){
   unzip(file, exdir = wd)
 }
 
+https://raw.githubusercontent.com/hannahslater/rdhs_example/master/rdhs_example_cattle_maps.R
+
 get_shps("https://raw.githubusercontent.com/hannahslater/rdhs_example/master/moz_adm2.zip")
 get_shps("https://raw.githubusercontent.com/hannahslater/rdhs_example/master/benin_adm2.zip")
 get_shps("https://raw.githubusercontent.com/hannahslater/rdhs_example/master/tan_adm2.zip")
@@ -141,11 +143,11 @@ plot_func(d1_clus[[4]], shp = mz2, nmaps=3)
 dev.off()
 
 tiff(paste0(names[5],"_map.tiff"),width=280,height=130,units="mm",res=300, compression="lzw")
-plot_func(d1_clus[[5]], shp = tz2, nmaps=3)
+plot_func(d1_clus[[5]], shp = tz2, nmaps=3, legplace = "bottomleft")
 dev.off()
 
 tiff(paste0(names[6],"_map.tiff"),width=300,height=180,units="mm",res=300, compression="lzw")
-plot_func(d1_clus[[6]], shp = tz2, nmaps=2)
+plot_func(d1_clus[[6]], shp = tz2, nmaps=2, legplace = "bottomleft")
 dev.off()
 
 
